@@ -1,0 +1,31 @@
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.global.js",
+  "jsdelivr": "dist/index.global.js",
+  "files": ["dist"],
+  "author": "zuramai <saugi.dev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nr build --watch",
+    "build": "tsup src/index.ts --format esm,cjs,iife --dts --no-splitting --clean --dts-resolve",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuramai/vite-ts-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zuramai/vite-ts-starter/issues"
+  },
+  "scripts": {
+    "dev": "nr tsup --watch",
+    "tsup": "tsup src/index.ts --format esm,cjs --dts --no-splitting --clean",
+    "build": "nr tsup",
+    "prepublishOnly": "nr build"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "play:dev": "pnpm -C playground run dev -- --open",
+    "play:build": "pnpm -C playground run build",
+    "js:dev": "pnpm run --filter ./packages dev",
+    "js:build": "pnpm run -r --filter ./packages build",
+    "dev": "nr play:dev",
+    "build": "nr js:build",
+    "release": "bumpp package.json packages/*/package.json --tag --commit --push && pnpm -r publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuramai/vite-ts-starter.git"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.16.1",
+    "@antfu/ni": "^0.13.0",
+    "bumpp": "^7.1.1",
+    "eslint": "^8.9.0",
+    "nanoevents": "^6.0.2",
+    "pnpm": "^6.31.0",
+    "sass": "^1.49.7",
+    "tsup": "^5.11.13",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  },
+  "license": "MIT"
+}
