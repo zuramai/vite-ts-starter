@@ -10,11 +10,6 @@
   "files": ["dist"],
   "author": "zuramai <saugi.dev@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "dev": "nr build --watch",
-    "build": "tsup src/index.ts --format esm,cjs,iife --dts --no-splitting --clean --dts-resolve",
-    "preview": "vite preview"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zuramai/vite-ts-starter.git"
