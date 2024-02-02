@@ -14,16 +14,16 @@
     "url": "git+https://github.com/zuramai/vite-ts-starter.git"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.16.1",
-    "@antfu/ni": "^0.13.2",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.25.0",
-    "nanoevents": "^6.0.2",
-    "pnpm": "^7.13.3",
-    "sass": "^1.55.0",
-    "tsup": "^6.2.3",
-    "typescript": "^4.8.4",
-    "vite": "^3.1.6"
+    "@antfu/eslint-config": "^2.6.3",
+    "@antfu/ni": "^0.21.12",
+    "bumpp": "^9.3.0",
+    "eslint": "^8.56.0",
+    "nanoevents": "^9.0.0",
+    "pnpm": "^8.15.1",
+    "sass": "^1.70.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
   },
   "license": "MIT"
 }
